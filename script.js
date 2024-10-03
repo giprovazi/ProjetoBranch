@@ -17,7 +17,7 @@ while(f < 10){
 let w=0;
 
 do{
-    console.log(w);
+    // console.log(w);
     w++;
 }
 while(w<5);
@@ -32,3 +32,22 @@ function Ola(nome){
 }
 // executando a função Ola passando o valor
 Ola("fiap")
+
+// ARROW FUNCTION
+
+const hello=()=>(console.log("função arrow function"))
+
+hello()
+
+// ARRAY[], OBJETO{} E METODOS()
+
+let jogadores =[
+    {nome:"Huguinho", idade:17}
+    {nome:"Zezinho", idade:18}
+    {nome:"Luizinho", idade:19}
+]
+
+let listarJogadores = jogadores.map(function(item){
+    return item.nome;
+})
+console.log(listarJogadores)
